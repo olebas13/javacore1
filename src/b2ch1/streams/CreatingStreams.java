@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 public class CreatingStreams {
 
     public static <T> void show(String title, Stream<T> stream) {
-        final int SIZE = 10;
+        final int SIZE = 100;
         List<T> firstElements = stream.limit(SIZE + 1).collect(Collectors.toList());
         System.out.println(title + ": ");
         for (int i = 0; i < firstElements.size(); i++) {
